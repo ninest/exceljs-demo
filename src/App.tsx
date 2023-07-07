@@ -5,6 +5,7 @@ function getDataFromSheet(sheet: ExcelJS.Worksheet) {
   return sheet
     .getSheetValues()
     .slice(1)
+    // @ts-ignore
     .map((r) => r.slice(1));
 }
 
